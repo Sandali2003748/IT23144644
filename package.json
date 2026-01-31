@@ -1,0 +1,23 @@
+{
+  "name": "it23144644",
+  "version": "1.0.0",
+  "description": "ITPM Assignment 01",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sandali2003748/IT23144644.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Sandali2003748/IT23144644/issues"
+  },
+  "homepage": "https://github.com/Sandali2003748/IT23144644#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.1",
+    "@types/node": "^25.1.0"
+  }
+}
