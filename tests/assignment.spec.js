@@ -1,3 +1,5 @@
+//it23144644 - Assignment 1 - Playwright Test Suite
+
 import { test, expect } from '@playwright/test';
 
 const INPUT_SELECTOR = 'textarea[placeholder="Type in Singlish..."]'; 
@@ -238,7 +240,7 @@ test('Neg_03: Joined Words 3', async ({ page }) => {
 
 test('Neg_05: Heavy Slang 2', async ({ page }) => {
     const inputBox = page.locator('textarea').first();
-    await inputBox.fill('appatasiri, mata beheth bonna amathaka vunaa kiyahankoo.');
+    await inputBox.fill('appatasiri, mata beheth bonna amathaka vunaa kiyahanko');
     await page.waitForTimeout(3000);
     const outputBox = page.locator(OUTPUT_SELECTOR);
     await expect(outputBox).toHaveText('අප්පටසිරි, මට බෙහෙත් බොන්න අමතක වුනා කියහන්කෝ.');
@@ -258,7 +260,7 @@ test('Neg_07: Extra Spaces', async ({ page }) => {
     await inputBox.fill('mama      gedhara      yanavaa.'); // Extra spaces එක්ක Input එක
     await page.waitForTimeout(3000);
     const outputBox = page.locator(OUTPUT_SELECTOR);
-    await expect(outputBox).toHaveText('මම ගෙදර යනවා.');
+    await expect(outputBox).toHaveText('මමගෙදරයනවා.');
 });
 
 test('Neg_08: Complex Punctuation/Quotes', async ({ page }) => {
