@@ -17,10 +17,12 @@ Before running the tests, ensure you have the following installed on your machin
 
 2.  **Install Dependencies**
     Run the following command to install the required Node modules (Playwright, Types, etc.):
+    ```bash
     npm install
 
 3.  **Install Playwright Browsers**
     Download the necessary browser binaries (Chromium, Firefox, WebKit):
+    ```bash
     npx playwright install
 
 ---
